@@ -25,39 +25,6 @@ This guide walks you through installing everything directly on your machine. Pic
 5. **Redis** — https://github.com/microsoftarchive/redis/releases (Redis-x64 msi) or use Memurai: https://www.memurai.com/get-memurai
 6. **VS Code** — https://code.visualstudio.com/
 
-### macOS
-
-```bash
-# Install Homebrew if needed: https://brew.sh/
-brew install git node@20 python@3.11 postgresql@16 postgis redis
-brew services start postgresql@16
-brew services start redis
-```
-
-### Ubuntu / Linux
-
-```bash
-# Node.js 20
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-# Python 3.11
-sudo apt-get install -y python3.11 python3.11-venv python3-pip
-
-# PostgreSQL 16 + PostGIS
-sudo apt-get install -y postgresql-16 postgresql-16-postgis-3
-
-# Redis
-sudo apt-get install -y redis-server
-
-# GIS system libraries (needed by GeoPandas/Rasterio)
-sudo apt-get install -y gdal-bin libgdal-dev libgeos-dev libproj-dev libpq-dev
-
-# Start services
-sudo systemctl start postgresql
-sudo systemctl start redis-server
-```
-
 ### Recommended VS Code Extensions
 
 Install these inside VS Code:
@@ -112,7 +79,6 @@ cd backend
 python -m venv venv
 
 # Activate the virtual environment:
-source venv/bin/activate         # macOS / Linux
 venv\Scripts\activate            # Windows PowerShell
 
 pip install --upgrade pip
