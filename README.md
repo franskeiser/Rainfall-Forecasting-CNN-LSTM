@@ -2,8 +2,6 @@
 
 > Rainfall Forecasting and Flood Risk Assessment in Manila using Multi-Stream CNN-LSTM with GIS-Based Integration
 
-A dissertation project by Andrade, Calumpit, Hubilla, and Saladino — Polytechnic University of the Philippines, Graduate School, Computer Science.
-
 ## Overview
 
 This system forecasts short-term rainfall (24–72 hrs) in the City of Manila using a multi-stream CNN-LSTM architecture and translates predictions into dynamic flood risk maps through GIS integration.
